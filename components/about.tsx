@@ -4,11 +4,11 @@ import Image from 'next/image';
 
 export default function About(){
     return (
-        <div className="w-full min-h-screen flex flex-col items-center justify-center px-5">
+        <div className="w-full min-h-screen flex flex-col items-center justify-center px-8">
             <h1 className="text-4xl font-medium text-[#FF1493] underline decoration-[#FF1493] underline-offset-4">About Me</h1>
 
             <div className="w-full flex items-center gap-10 mt-20">
-                <Image src={'/profile.png'} alt={'Profile Image'} width={600} height={100} />
+                <Image src={'/profile.png'} alt={'Profile Image'} width={500} height={20} />
 
                 <p className="text-base text-white">
                     I am a passionate <span className="text-[#FF1493]">Front-End Developer</span> with experience in creating modern web applications. I enjoy solving problems and turning ideas into reality through code.
