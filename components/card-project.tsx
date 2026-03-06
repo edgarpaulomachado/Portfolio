@@ -21,10 +21,10 @@ export default function CardProject({
   demo,
 }: CardProjectProps) {
   return (
-    <Card className="w-130 bg-[#09090A] rounded-2xl border border-[#212125] overflow-hidden transition-all duration-300 hover:border-[#FF1493] hover:shadow-lg hover:shadow-[#ff149330]">
+    <Card className="md:w-130 sm:w-90 bg-[#09090A] md:rounded-2xl sm:rounded-xl border border-[#212125] overflow-hidden transition-all duration-300 hover:border-[#FF1493] hover:shadow-lg hover:shadow-[#ff149330]">
 
       <CardHeader className="p-0">
-        <div className="relative w-full h-65">
+        <div className="relative w-full md:h-65 sm:h-50">
           <Image
             src={image}
             alt={title}
@@ -34,12 +34,12 @@ export default function CardProject({
         </div>
       </CardHeader>
 
-      <CardContent className="p-6">
-        <h3 className="text-xl font-semibold text-white">
+      <CardContent className="md:p-6 sm:p-3">
+        <h3 className="md:text-xl sm:text-lg font-semibold text-white">
           {title}
         </h3>
 
-        <p className="text-gray-400 mt-3 text-sm leading-relaxed">
+        <p className="text-gray-400 mt-3 md:text-sm sm:text-xs leading-relaxed">
           {description}
         </p>
 

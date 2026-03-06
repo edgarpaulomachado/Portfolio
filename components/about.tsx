@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 export default function About(){
     return (
-        <div className="w-full min-h-screen flex flex-col items-center justify-center px-8">
-            <h1 className="text-4xl font-medium text-[#FF1493] underline decoration-[#FF1493] underline-offset-4">About Me</h1>
+        <div className="w-full min-h-screen flex flex-col items-center justify-center md:px-8 sm:px-4 sm:mt-5">
+            <h1 className="md:text-4xl sm:text-2xl font-medium text-[#FF1493] underline decoration-[#FF1493] underline-offset-4">About Me</h1>
 
-            <div className="w-full flex items-center gap-10 mt-20">
-                <Image src={'/profile.png'} alt={'Profile Image'} width={500} height={20} />
+            <div className="w-full flex items-center gap-10 md:mt-20 sm:mt-20">
+                <Image src={'/profile.png'} alt={'Profile Image'} width={500} height={20} className="sm:w-62.5"/>
 
-                <p className="text-base text-white">
+                <p className="md:text-base sm:text-xs text-white">
                     I am a passionate <span className="text-[#FF1493]">Front-End Developer</span> with experience in creating modern web applications. I enjoy solving problems and turning ideas into reality through code.
                     I love creating clean, responsive, and user-friendly web applications that balance functionality with elegant design. With a strong foundation in modern web technologies, I thrive on turning complex problems into simple, intuitive experiences.
 

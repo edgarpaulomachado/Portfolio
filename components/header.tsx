@@ -46,7 +46,7 @@ export default function Header() {
 
   return (
     <div className="w-full h-22 flex justify-center items-center fixed top-0 z-50">
-      <div className="w-auto h-14 flex gap-1 items-center rounded-4xl bg-[#212125]/80 backdrop-blur-md">
+      <div className="w-auto md:h-14 sm:h-12 flex gap-1 items-center md:rounded-4xl sm:rounded-2xl bg-[#212125]/80 backdrop-blur-md">
 
         {navItems.map((item) => {
           const Icon = item.icon
@@ -57,14 +57,14 @@ export default function Header() {
               key={item.id}
               onClick={() => scrollToSection(item.id)}
               className={clsx(
-                "w-41 h-14 rounded-4xl flex items-center justify-center gap-2 px-3 transition-all duration-300 cursor-pointer",
+                "md:w-41 sm:w-22 md:h-14 sm:h-12 md:rounded-4xl sm:rounded-2xl flex items-center justify-center md:gap-2 sm:gap-2 md:px-3 sm:px-1 transition-all duration-300 cursor-pointer",
                 isActive
                   ? "bg-[#FF1493] text-white"
                   : "text-[#C4C3C3] hover:bg-white/10"
               )}
             >
-              <Icon size={18} />
-              <p className="font-bold text-sm">{item.label}</p>
+              <Icon size={12} className="md:w-4 md:h-4" />
+              <p className="font-bold md:text-sm sm:text-xs">{item.label}</p>
             </button>
           )
         })}
