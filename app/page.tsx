@@ -8,10 +8,17 @@ import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function Portfolio() {
   return (
-    <div className='w-full flex flex-col items-center bg-background px-4 py-5'>
+    <>
+
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      
+      <div className='w-full flex flex-col items-center bg-background px-4 py-5'>
       <Header />
 
       <section id="home" className="w-full min-h-screen flex flex-col items-center justify-center gap-4 md:pt-32 sm:pt-16">
@@ -68,13 +75,13 @@ export default function Portfolio() {
               <Image src='/git-hub.svg' width={24} height={24} alt={''} className="sm:w-4 sm:h-4"/>
             </div>
           </Link>
-          <Link href="https://www.linkedin.com/in/edgarpaulomachado" target="_blank">
+          <Link href="https://www.linkedin.com/in/edgar-machado-92b757270" target="_blank">
             <div className="md:w-14 sm:w-8 md:h-14 sm:h-8 rounded-sm bg-[#FF1493] flex justify-center items-center">
               <Image src='/LinkedIn.svg' width={24} height={24} alt={''} className="sm:w-4 sm:h-4"/>
             </div>
           </Link>
 
-          <Link href="mailto:kadyedgarpaulomacahdo@gmail.com" target="_blank">
+          <Link href="mailto:kadyedgarpaulomachado@gmail.com" target="_blank">
             <div className="md:w-14 sm:w-8 md:h-14 sm:h-8 rounded-sm bg-[#FF1493] flex justify-center items-center">
               <Image src='/Email.svg' width={24} height={24} alt={''} className="sm:w-4 sm:h-4"/>
             </div>
@@ -83,5 +90,6 @@ export default function Portfolio() {
       </div>
 
     </div>
+    </>
   )
 }
