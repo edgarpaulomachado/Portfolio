@@ -10,6 +10,7 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Edgar Machado",
   description: "Welcome to my Portfolio",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
